@@ -1,14 +1,39 @@
-class Casino {
-    // Write code here
-};
+class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    brag() {
+        console.log("My car is a " + this.year + " " + 
+             this.brand + " " + this.model + "!");
+    }
+}
+
+
+class Calculator {
+    addNums(num1, num2) {
+        return (num1 + num2);
+    }
+}
+
 
 // TESTS
-const myCasino = new Casino("HackerU Casino");
-console.log(myCasino);
-myCasino.playGame(5);
-myCasino.playGame(15);
-myCasino.playGame(25);
-myCasino.playGame(35);
+
+const calc = new Calculator();
+calc.addNums(7, 33);
+// > 40
+
+// const myCoolCar = new Car('Ford', 'Mustang', 2022)
+// myCoolCar.brag();
+
+// const myCasino = new Casino("HackerU Casino");
+// console.log(myCasino);
+// myCasino.playGame(5);
+// myCasino.playGame(15);
+// myCasino.playGame(25);
+// myCasino.playGame(35);
 
 // BONUS TESTS
 /*
